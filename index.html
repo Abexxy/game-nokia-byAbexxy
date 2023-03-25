@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Snake</title>
+    <style>
+        *,
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            
+        }
+        #canvas {
+            border: 1px solid black;
+            position: relative;
+            left: 310px;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-left: 300px;
+        }
+        
+        button {
+            font-family: sans-serif;
+            font-weight: bold;
+            border: none;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            padding: 12px;
+            margin: 5px;
+            transition: .3s ease-in-out;
+        }
+        button:hover {
+            background-color: white;
+            color: black;
+            border-radius: 5px 12px 5px 12px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <br>
+    <div class="button">
+    <button id="up">UP</button>
+    <button id="down">DOWN</button>
+    <button id="left">LEFT</button>
+    <button id="right">RIGHT</button>
+    </div>
+    <script src="snake2.js"></script>
+</body>
+</html>
